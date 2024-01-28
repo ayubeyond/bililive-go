@@ -233,11 +233,13 @@ NAS 用户使用系统自带 GUI 创建 docker compose 的情况请参考群晖�
     5) rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-1.el7.nux.noarch.rpm
     6) yum repolist
     7) yum install -y ffmpeg
+
 二、克隆代码并编译(linux环境)    
    1. git clone https://github.com/hr3lxphr6j/bililive-go.git
    2. cd bililive-go
    3. make build-web
-   4. make 
+   4. make
+
 三、linux编译其他环境(以windows 为例)
    1. GOOS=windows GOARCH=amd64 CGO_ENABLED=0 UPX_ENABLE=0 TAGS=dev GCFLAGS="all=-N -l" ./src/hack/build.sh bililive
    2.如果不需要调试，可以改成
